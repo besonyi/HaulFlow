@@ -1,0 +1,152 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    @apply border-slate-800;
+  }
+
+  html {
+    @apply bg-[#0b0d10];
+    text-rendering: optimizeLegibility;
+  }
+
+  body {
+    @apply m-0 min-h-screen bg-[#0b0d10] font-sans text-[15px] antialiased;
+    font-family: Inter, "Segoe UI Variable", "Segoe UI", system-ui, sans-serif;
+    letter-spacing: -0.006em;
+  }
+
+  button,
+  input,
+  select {
+    font: inherit;
+  }
+
+  ::selection {
+    @apply bg-cyan-300 text-slate-950;
+  }
+
+  * {
+    scrollbar-width: thin;
+    scrollbar-color: #334155 transparent;
+  }
+
+  *::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+  }
+
+  *::-webkit-scrollbar-thumb {
+    border: 3px solid transparent;
+    border-radius: 999px;
+    background-clip: content-box;
+    background-color: #334155;
+  }
+}
+
+@layer components {
+  .sessions-page .bg-white,
+  .sessions-page .bg-slate-50 {
+    background-color: #101318 !important;
+  }
+
+  .sessions-page .border-slate-100,
+  .sessions-page .border-slate-200 {
+    border-color: rgb(255 255 255 / 0.1) !important;
+  }
+
+  .sessions-page .text-slate-950,
+  .sessions-page .text-slate-900,
+  .sessions-page .text-slate-800,
+  .sessions-page .text-slate-700 {
+    color: #f1f5f9 !important;
+  }
+
+  .sessions-page .text-slate-600,
+  .sessions-page .text-slate-500 {
+    color: #94a3b8 !important;
+  }
+
+  .sessions-page .text-slate-400 {
+    color: #64748b !important;
+  }
+
+  .sessions-page .bg-sky-50,
+  .sessions-page .bg-emerald-50,
+  .sessions-page .bg-amber-50 {
+    background-color: rgb(255 255 255 / 0.04) !important;
+  }
+}
+
+html[data-theme="light"] {
+  background: #f4f7fb;
+  color-scheme: light;
+}
+
+html[data-theme="light"] body,
+html[data-theme="light"] .theme-shell {
+  background: #f4f7fb !important;
+  color: #0f172a;
+}
+
+html[data-theme="light"] .theme-sidebar {
+  background: #ffffff !important;
+  border-color: #e2e8f0 !important;
+}
+
+html[data-theme="light"] .theme-header {
+  background: rgb(255 255 255 / 0.9) !important;
+  border-color: #e2e8f0 !important;
+}
+
+html[data-theme="light"] .theme-shell .bg-\[\#101318\],
+html[data-theme="light"] .theme-shell .bg-\[\#171a20\],
+html[data-theme="light"] .theme-shell .bg-\[\#13171e\] {
+  background-color: #ffffff !important;
+}
+
+html[data-theme="light"] .theme-shell .bg-\[\#0c0e12\],
+html[data-theme="light"] .theme-shell [class*="bg-white"] {
+  background-color: #f8fafc !important;
+}
+
+html[data-theme="light"] .theme-shell [class*="border-white"],
+html[data-theme="light"] .theme-shell [class*="border-slate"] {
+  border-color: #e2e8f0 !important;
+}
+
+html[data-theme="light"] .theme-shell [class*="divide-white"] > * {
+  border-color: #e2e8f0 !important;
+}
+
+html[data-theme="light"] .theme-shell .text-white,
+html[data-theme="light"] .theme-shell [class*="text-slate-100"],
+html[data-theme="light"] .theme-shell [class*="text-slate-200"],
+html[data-theme="light"] .theme-shell [class*="text-slate-300"] {
+  color: #0f172a !important;
+}
+
+html[data-theme="light"] .theme-shell [class*="text-slate-400"],
+html[data-theme="light"] .theme-shell [class*="text-slate-500"],
+html[data-theme="light"] .theme-shell [class*="text-slate-600"] {
+  color: #475569 !important;
+}
+
+html[data-theme="light"] .theme-shell input,
+html[data-theme="light"] .theme-shell select {
+  color: #0f172a;
+}
+
+html[data-theme="light"] .theme-shell .theme-toggle {
+  background: #f8fafc !important;
+}
+
+html[data-theme="light"] .sessions-page .bg-white,
+html[data-theme="light"] .sessions-page .bg-slate-50,
+html[data-theme="light"] .sessions-page .bg-sky-50,
+html[data-theme="light"] .sessions-page .bg-emerald-50,
+html[data-theme="light"] .sessions-page .bg-amber-50 {
+  background-color: #ffffff !important;
+}

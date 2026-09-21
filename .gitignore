@@ -1,0 +1,10 @@
+node_modules/
+out/
+release/
+.electron-vite/
+*.tsbuildinfo
+*.sqlite
+*.sqlite-*
+.env
+outputs/
+.codebase-memory/
